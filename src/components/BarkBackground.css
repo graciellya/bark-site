@@ -1,0 +1,27 @@
+.bark-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bark-background__image {
+  position: absolute;
+  inset: -2%;
+  background-image: url("/bark-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+}
+
+.bark-background__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(11, 11, 11, 0.3) 0%,
+    rgba(11, 11, 11, 0.68) 100%
+  );
+}
